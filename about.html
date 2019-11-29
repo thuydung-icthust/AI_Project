@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy|Permanent+Marker|Indie+Flower&display=swap"
+        rel="stylesheet">
+    <title>How to Play</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<style>
+.main-content{
+    display: grid;
+    justify-content: center;
+    color: aliceblue;
+    position: relative;
+    margin-top: 30vh;
+}
+p{
+    font-size: 2vw;
+}
+.back-ward{
+    text-decoration: none;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+}
+.fas{
+    cursor: pointer;
+}
+</style>
+<body>
+    <div class="menu" id="content">
+            <div class="header">
+                    <img src="ttt.jpg" class="ttt">
+                    <div style="display: flex; flex-direction: row; justify-content: center;">
+                        <h3 class="c1">Tic</h3>
+                        <h3 class="c2">Tac </h3>
+                        <h3 class="c3">Toe</h3>
+                    </div>
+                </div>
+                <div class="lines">
+                    <div class="line">
+        
+                    </div>
+                </div>
+                <div class="main-content">
+                    <p>Code: Group 13 <br> UI: Group 13 <br> Document: Lecture On Class</p><br>
+                    <div class="back-ward"><i class="fas fa-backward fa-3x" onclick="back()"></i></div>
+                </div>
+    </div>
+    <script>
+        function back(){
+            window.location.href = "index.html";
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/8e500f9321.js" crossorigin="anonymous"></script>
+</body>
+</html>

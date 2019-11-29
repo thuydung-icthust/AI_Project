@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tic Tac Toe</title>
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy|Permanent+Marker|Indie+Flower&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Da&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+    <div class="menu" id="content">
+        <div class="header">
+            <div class="logo">
+                <img src="ttt.jpg" class="ttt">
+                
+            </div>
+            
+           
+            
+        </div>
+        <div class="lines">
+            
+
+        </div>
+        <div id="menu-starter">
+            <ul>
+                <li class="flex-box">
+                        <div class="contain-box"><h3 class="option1" onclick="start();">Start</h3>
+                              <div class="lines">
+                                <div class="line1"></div>
+                              </div>
+                        </div>
+                </li>
+                
+                <li class="flex-box">
+                    <h3 class="option3" onclick="ChangeWeb(1)">About</h3>
+                    <div class="lines">
+                        <div class="line3"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="option-but">
+           <button> <div class="option-but"><i class="fas fa-pause fa-2x"  onclick="pause()"></i></div></button>
+
+            <button><div class="option-but"><i class="fas fa-backward fa-2x" onclick="backtoMenu()" id="playbut"></i></div></button>
+            <button><div class="option-but"><i class="fas fa-redo-alt fa-2x" onclick="restart()"></i></div></button>
+
+        </div>
+        <div id="playing">
+            
+        </div>
+        <div class="main" id="tableX">
+            <div class="content-main" id="main">
+                <div class="point-container">
+                        <div class="point">
+                                <p class="two-type">Player 1</p>
+                                <i class="fa fa-user"></i>
+                                <p id="left-player">0</p>
+                        </div>
+                </div>
+                    <div style="display: flex; justify-content: center;">
+                            <table id="_table">
+
+                                </table>
+                    </div>
+                    <div class="point-container">
+                            <div class="point">
+                                    <p class="two-type">Player 2</p>
+                                    <i class="fas fa-user" id="two"></i>
+                                    <i class="fas fa-robot" id="one"></i>
+                                    <p id="right-player">0</p>
+                            </div>
+                    </div>
+            </div>
+        </div>
+        <div id="rotate" class="overlay">
+            <div class="overlay-content">
+                <img src="rotate-gif.gif" alt="">
+            </div>
+        </div>
+        <div id="myNav" class="overlay">
+            <div class="overlay-content">
+                <a href="#" id="winner-player"></a>
+                <a href="#" onclick="continue_game()">Next Round</a>
+                <a href="#" onclick="backtoMenu()">Menu</a>
+                
+            </div>
+        </div>
+        <div id="pausegame" class="overlay">
+            <div class="overlay-content">
+                <i class="fas fa-play pointer fa-4x" onclick="resume()" style="margin-top: 150px;"></i><br>
+                <i class="fas fa-backward pointer fa-4x" onclick="backtoMenu()"></i>
+            </div>
+        </div>
+        <div id="option" class="overlay">
+            <div class="overlay-content">
+                <div class="main-option">
+                    <div class="numberOfplayer">
+                        <a class="_player" onclick="option(0)" id="single" style="margin-right: 20px;"><i class="fa fa-user "></i></a>
+                        <a class="_player" onclick="option(1)" id="multi"><i class="fas fa-user-friends "></i></a>
+                    </div>
+                    <div class="numberOfplayer">
+                        <a class="sizeX" onclick="size(3)" id="s3">3x3</a>
+                        <a class="sizeX" onclick="size(5)" id="s5">5x5</a>
+                        <a class="sizeX" onclick="size(7)" id="s7">7x7</a>
+                    </div>
+                    <div><a><i class="fas fa-play pointer sizeX" id="s-1" onclick="go()"></i></a></div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+    <script src="logic.js"></script>
+    <script src="https://kit.fontawesome.com/8e500f9321.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
